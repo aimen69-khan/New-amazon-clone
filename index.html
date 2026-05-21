@@ -1,0 +1,1179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./media.css">
+    <script defer src="./app.js"></script>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="nav-logo border">
+                <div class="logo"></div>
+            </div>
+
+            <div class="nav-address border">
+                <p class="add-first">Deliver to</p>
+                <div class="add-icon">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p class="add-sec">pakistan</p>
+                </div>
+            </div>
+
+            <div class="nav-search">
+                <select class="search-select">
+                    <option value="all">All</option>
+                    <option value="art">Arts & Crafts</option>
+                    <option value="automotive">Automotive</option>
+                    <option value="baby">Baby</option>
+                    <option value="beauty">Beauty & Personal Care</option>
+                    <option value="books">Books</option>
+                    <option value="computers">Computers</option>
+                    <option value="electronics">Electronics</option>
+                    <option value="fashion">Fashion</option>
+                    <option value="grocery">Grocery & Gourmet Food</option>
+                    <option value="health">Health & Household</option>
+                    <option value="home">Home & Kitchen</option>
+                    <option value="industrial">Industrial & Scientific</option>
+                    <option value="luggage">Luggage & Travel Gear</option>
+                    <option value="movies">Movies & TV</option>
+                    <option value="music">Music, CDs & Vinyl</option>
+                    <option value="pet">Pet Supplies</option>
+                    <option value="software">Software</option>
+                    <option value="sports">Sports & Outdoors</option>
+                    <option value="tools">Tools & Home Improvement</option>
+                    <option value="toys">Toys & Games</option>
+                    <option value="video-games">Video Games</option>
+                </select>
+                <input type="text" placeholder="Search Amazon" class="search-input">
+                <div class="serach-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+            
+            <div class="languages">
+        <div class="lang-right">
+            
+            <div class="lang-dropdown" id="langDropdownComponent">
+                
+                <div class="lang-trigger border">
+                    <img src="./images/usa-flag.jfif" class="flag-icon imger">
+                    <span class="lang-code-text">EN <span class="lang-arrow">▼</span></span>
+                </div>
+
+                <div class="lang-panel">
+                    <p class="lang-section-title">Change language</p>
+                    
+                    <div class="lang-options-list">
+                        <label class="lang-selection-row">
+                            <input type="radio" name="site_language" value="en" checked>
+                            <span class="lang-custom-radio"></span>
+                            <span class="lang-label-text">English - EN</span>
+                        </label>
+                        
+                        <label class="lang-selection-row">
+                            <input type="radio" name="site_language" value="es">
+                            <span class="lang-custom-radio"></span>
+                            <span class="lang-label-text">español - ES</span>
+                        </label>
+
+                        <label class="lang-selection-row">
+                            <input type="radio" name="site_language" value="ar">
+                            <span class="lang-custom-radio"></span>
+                            <span class="lang-label-text">العربية - AR</span>
+                        </label>
+
+                        <label class="lang-selection-row">
+                            <input type="radio" name="site_language" value="de">
+                            <span class="lang-custom-radio"></span>
+                            <span class="lang-label-text">Deutsch - DE</span>
+                        </label>
+
+                        <label class="lang-selection-row">
+                            <input type="radio" name="site_language" value="ko">
+                            <span class="lang-custom-radio"></span>
+                            <span class="lang-label-text">한국어 - KO</span>
+                        </label>
+                    </div>
+                    
+                    <hr class="lang-divider">
+
+                    <p class="lang-section-title">Change currency</p>
+                    <div class="lang-currency-row">
+                        <span>$ - USD - US Dollar</span>
+                        <a href="#" class="lang-action-link">Change</a>
+                    </div>
+
+                    <hr class="lang-divider">
+
+                    <div class="lang-region-note">
+                        <span class="flag-icon">🇺🇸</span>
+                        <span>You are shopping on Amazon.com</span>
+                    </div>
+                    
+                    <div class="lang-center-link">
+                        <a href="#" class="lang-action-link">Change country/region.</a>
+                    </div>
+                </div>
+
+            </div> </div>
+    </div>
+
+    <div class="lang-page-overlay" id="langPageOverlay"></div>
+
+           <div class="signin">
+        <div class="signin-right">
+            
+            <div class="dropdown-container" id="accountDropdown">
+                <div class="sign-trigger border">
+                    <span class="sign-subtext">Hello, sign in</span>
+                    <span class="sign-text">Account & Lists <span class="arrow">▼</span></span>
+                </div>
+
+                <div class="dropdown-menu">
+                    <div class="signin-section">
+                        <button class="signin-btn">Sign in</button>
+                        <p class="new-customer">New customer? <a href="#">Start here.</a></p>
+                    </div>
+                    
+                    <hr class="hrline">
+
+                    <div class="dropdown-content">
+                        <div class="column">
+                            <h3>Your Lists</h3>
+                            <ul>
+                                <li><a href="#">Create a List</a></li>
+                                <li><a href="#">Find a List or Registry</a></li>
+                            </ul>
+                        </div>
+                        <div class="column border-left">
+                            <h3>Your Account</h3>
+                            <ul>
+                                <li><a href="#">Account</a></li>
+                                <li><a href="#">Orders</a></li>
+                                <li><a href="#">Recommendations</a></li>
+                                <li><a href="#">Browsing History</a></li>
+                                <li><a href="#">Watchlist</a></li>
+                                <li><a href="#">Kindle Unlimited</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div> </div>
+        </div>
+
+    <div class="overlay" id="pageOverlay"></div>
+            
+            
+
+            <div class="nav-reture border">
+            <p><span>Returns</span></p>
+            <p class="nav-sec">& Orders</p>
+        </div>
+
+        <div class="nav-cart border">
+            <i class="fa-solid fa-cart-arrow-down"></i>
+            Cart
+        </div>
+    </div>
+
+    <div class="panel">
+        <select class="All-select">
+                    <option value="all">☰ All</option>
+                    <option value="Digital">Digital Content & Devices</option>
+                    <option value="Prime">Prime Video →</option>
+                    <option value="Kindle">Kindle E-readers & Books</option>
+                    <option value="Appstore">Amazon Appstore</option>
+                    <option value="Department">Shop by Department →</option>
+                    <option value="electronics">Electronics</option>
+                    <option value="computers">Computers</option>
+                    <option value="home">Smart Home →</option>
+                    <option value="Arts">Arts & Crafts</option>
+                    <option value="seeall">See all ↓</option>
+                    <option value="Features">Programs & Features</option>
+                    <option value="Cards">Gift Cards →</option>
+                    <option value="Interest">Shop By Interest</option>
+                    <option value="Live">Amazon Live</option>
+                    <option value="International">International Shopping →</option>
+                    <option value="all">See All ↓</option>
+                    <option value="Settings">Help & Settings</option>
+                    <option value="Account">Your Account</option>
+                    <option value="english">English →</option>
+                    <option value="usa">United States</option>
+                    <option value="service">Customer Service</option>
+                    <option value="signin">Sign in →</option>
+                </select>
+
+        <div class="panel-ops">
+            <p class="border">Today's Deals</p>
+            <p class="border">Gift Cards</p>
+            <p class="border">Sell</p>
+            <p class="border">Registry</p>
+            <p class="border">Prime Video</p>
+            <p class="border">Customer Service</p>
+        </div>
+    </div>
+    </header>
+    
+
+    <section class="hero-container">
+        
+        <div class="hero-slider">
+            <button class="slider-btn prev-btn" id="prevBtn">&#10094;</button>
+            <button class="slider-btn next-btn" id="nextBtn">&#10095;</button>
+
+            <div class="slide active">
+                <img src="./images/hero-section1.jpg" alt="Banner 1">
+            </div>
+            <div class="slide">
+                <img src="./images/hero-section2.jpg" alt="Banner 2">
+            </div>
+            <div class="slide">
+                <img src="./images/hero-section3.jpg" alt="Banner 3">
+            </div>
+            <div class="slide">
+                <img src="./images/hero-section4.jpg" alt="Banner 4">
+            </div>
+        </div>
+
+        
+            <div class="amazon-feed-grid">
+
+        <div class="amazon-card">
+            <h2 class="card-title">Get your game on</h2>
+            <div class="single-image-wrapper">
+                <img src="./images/boxes1.jpg" alt="Gaming Setup">
+            </div>
+            <a href="#" class="card-footer-link">Shop gaming</a>
+        </div>
+
+        <div class="amazon-card">
+            <h2 class="card-title">Shop Fashion for less</h2>
+            <div class="quad-grid">
+                <div class="quad-item">
+                    <img src="./images/image-1.jfif" alt="Jeans">
+                    <span>Jeans under $50</span>
+                </div>
+                <div class="quad-item">
+                    <img src="./images/image-2.jfif" alt="Tops">
+                    <span>Tops under $25</span>
+                </div>
+                <div class="quad-item">
+                    <img src="./images/image-3.jfif" alt="Dresses">
+                    <span>Dresses under $30</span>
+                </div>
+                <div class="quad-item">
+                    <img src="./images/image-4.jfif" alt="Shoes">
+                    <span>Shoes under $50</span>
+                </div>
+            </div>
+            <a href="#" class="card-footer-link">See all deals</a>
+        </div>
+
+        <div class="amazon-card">
+            <h2 class="card-title">New home arrivals under $50</h2>
+            <div class="quad-grid">
+                <div class="quad-item">
+                    <img src="./images/kitchen-1.jpg" alt="Jeans">
+                    <span>Kitchen & dining</span>
+                </div>
+                <div class="quad-item">
+                    <img src="./images/kitchen-2.jpg" alt="Tops">
+                    <span>Home Improvement</span>
+                </div>
+                <div class="quad-item">
+                    <img src="./images/kitchen-3.jpg" alt="Dresses">
+                    <span>Décor</span>
+                </div>
+                <div class="quad-item">
+                    <img src="./images/kitchen-4.jpg" alt="Shoes">
+                    <span>Bedding and Bath</span>
+                </div>
+            </div>
+            <a href="#" class="card-footer-link">Shop the latest from Home</a>
+        </div>
+
+        <div class="amazon-card">
+            <h2 class="card-title">Grilling must-haves for Dads</h2>
+            <div class="quad-grid">
+                <div class="quad-item">
+                    <img src="./images/for-dads1.jpg" alt="Kitchen & Dining">
+                    <span>Grilling pans</span>
+                </div>
+                <div class="quad-item">
+                    <img src="./images/for-dads2.jpg" alt="Home Improvement">
+                    <span>Aprons</span>
+                </div>
+                <div class="quad-item">
+                    <img src="./images/for-dads3.jpg" alt="Decor">
+                    <span>Grilling tools</span>
+                </div>
+                <div class="quad-item">
+                    <img src="./images/for-dads4.jpg" alt="Bedding">
+                    <span>Gloves</span>
+                </div>
+            </div>
+            <a href="#" class="card-footer-link">Shop Father's Day gifts</a>
+        </div>
+
+
+        <div class="amazon-card">
+            <h2 class="card-title">Top categories in Kitchen appliances</h2>
+            <div class="mixed-layout">
+                <div class="mixed-top">
+                    <img src="./images/top1.jpg" alt="Cooker">
+                    <span>Cooker</span>
+                </div>
+                <div class="mixed-bottom-row">
+                    <div class="mixed-thumb">
+                        <img src="./images/top2.jfif" alt="Coffee">
+                        <span>Coffee</span>
+                    </div>
+                    <div class="mixed-thumb">
+                        <img src="./images/boxes-Pots&Pans.jfif" alt="Pots">
+                        <span>Pots and Pans</span>
+                    </div>
+                    <div class="mixed-thumb">
+                        <img src="./images/amazon-Kettles.jfif" alt="Kettles">
+                        <span>Kettles</span>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="card-footer-link">Explore all products in Kitchen</a>
+        </div>
+
+         <div class="amazon-card">
+            <h2 class="card-title">Shop Father's Day deals</h2>
+            <div class="quad-grid">
+                <div class="quad-item">
+                    <img src="./images/father-day1.jpg" alt="Kitchen & Dining">
+                    <span>Apparel</span>
+                </div>
+                <div class="quad-item">
+                    <img src="./images/father-day2.jpg" alt="Home Improvement">
+                    <span>Personal Care</span>
+                </div>
+                <div class="quad-item">
+                    <img src="./images/father-day3.jpg" alt="Tech">
+                    <span>Tech</span>
+                </div>
+                <div class="quad-item">
+                    <img src="./images/father-day4.jpg" alt="shoes">
+                    <span>shoes</span>
+                </div>
+            </div>
+            <a href="#" class="card-footer-link">Explore more gifts</a>
+        </div>
+
+         <div class="amazon-card">
+            <h2 class="card-title">Fashion trends you like</h2>
+            <div class="quad-grid">
+                <div class="quad-item">
+                    <img src="./images/dress1.jpg">
+                    <span>Dresses</span>
+                </div>
+                <div class="quad-item">
+                    <img src="./images/dress2.jpg">
+                    <span>Knit</span>
+                </div>
+                <div class="quad-item">
+                    <img src="./images/dress3.jpg">
+                    <span>Jeckets</span>
+                </div>
+                <div class="quad-item">
+                    <img src="./images/dress4.jpg">
+                    <span>Jewelry</span>
+                </div>
+            </div>
+            <a href="#" class="card-footer-link">Explore more</a>
+        </div>
+
+         <div class="amazon-card">
+            <h2 class="card-title">Easy updates for elevated spaces</h2>
+            <div class="quad-grid">
+                <div class="quad-item">
+                    <img src="./images/easy-updates1.jpg" alt="Kitchen & Dining">
+                    <span>Baskets & hampers</span>
+                </div>
+                <div class="quad-item">
+                    <img src="./images/easy-updates2.jpg" alt="Home Improvement">
+                    <span>Hardware</span>
+                </div>
+                <div class="quad-item">
+                    <img src="./images/easy-updates3.jpg" alt="Decor">
+                    <span>Accent furniture</span>
+                </div>
+                <div class="quad-item">
+                    <img src="./images/easy-updates4.jpg" alt="Bedding">
+                    <span>Wallpaper & paint</span>
+                </div>
+            </div>
+            <a href="#" class="card-footer-link">Shop home products</a>
+        </div>
+    </div>
+
+        </div>
+    </section>
+    
+
+    <section class="amazon-best-sellers">
+        <h2 class="slider-heading">Best Sellers in Clothing, Shoes & Jewelry</h2>
+        
+        <div class="slider-container">
+            <button class="silder-btn prev" id="silderbtnPrev">&#10094;</button>
+            <button class="silder-btn next" id="silderbtnNext">&#10094;</button>
+
+            <div class="image-track" id="imageTrack">
+                <div class="img-item"><img src="./images/best-sellers-in-clothing1.jpg" alt="Clothing Item"></div>
+                
+                <div class="img-item"><img src="./images/best-sellers-in-clothing2.jpg" alt="Clothing Item"></div>
+
+                <div class="img-item"><img src="./images/best-sellers-in-clothing3.jpg" alt="Clothing Item"></div>
+
+                <div class="img-item"><img src="./images/best-sellers-in-clothing4.jpg" alt="Clothing Item"></div>
+
+                <div class="img-item"><img src="./images/best-sellers-in-clothing5.jpg" alt="Clothing Item"></div>
+
+                <div class="img-item"><img src="./images/best-sellers-in-clothing6.jpg" alt="Clothing Item"></div>
+
+                <div class="img-item"><img src="./images/best-sellers-in-clothing7.jpg" alt="Clothing Item"></div>
+
+                <div class="img-item"><img src="./images/best-sellers-in-clothing8.jpg" alt="Clothing Item"></div>
+
+                <div class="img-item"><img src="./images/best-sellers-in-clothing9.jpg" alt="Clothing Item"></div>
+
+                <div class="img-item"><img src="./images/best-sellers-in-clothing10.jpg" alt="Clothing Item"></div>
+
+                <div class="img-item"><img src="./images/best-sellers-in-clothing11.jpg" alt="Clothing Item"></div>
+
+                <div class="img-item"><img src="./images/best-sellers-in-clothing12.jpg" alt="Clothing Item"></div>
+
+                <div class="img-item"><img src="./images/best-sellers-in-clothing13.jpg" alt="Clothing Item"></div>
+                
+                <div class="img-item"><img src="./images/best-sellers-in-clothing14.jpg" alt="Clothing Item"></div>
+                
+                <div class="img-item"><img src="./images/best-sellers-in-clothing15.jpg" alt="Clothing Item"></div>
+
+                <div class="img-item"><img src="./images/best-sellers-in-clothing16.jpg" alt="Clothing Item"></div>
+
+                <div class="img-item"><img src="./images/best-sellers-in-clothing17.jpg" alt="Clothing Item"></div>
+
+                <div class="img-item"><img src="./images/best-sellers-in-clothing18.jpg" alt="Clothing Item"></div>
+
+                <div class="img-item"><img src="./images/best-sellers-in-clothing19.jpg" alt="Clothing Item"></div>
+                
+                <div class="img-item"><img src="./images/best-sellers-in-clothing20.jpg" alt="Clothing Item"></div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="amazon-best-sellers">
+        <h2 class="slider-heading">Popular products in Beauty internationally</h2>
+        
+        <div class="slider-container">
+            <button class="silder-btn prev" id="silderbtnPrev2">&#10094;</button>
+            <button class="silder-btn next" id="silderbtnNext2">&#10094;</button>
+
+            <div class="image-track" id="imageTrack1">
+                <div class="img-item"><img src="./images/popular-products-in-beauty1.jpg" alt="Clothing Item"></div>
+                
+                <div class="img-item"><img src="./images/popular-products-in-beauty2.jpg" alt="Clothing Item"></div>
+
+                <div class="img-item"><img src="./images/popular-products-in-beauty3.jpg" alt="Clothing Item"></div>
+
+                <div class="img-item"><img src="./images/popular-products-in-beauty4.jpg" alt="Clothing Item"></div>
+
+                <div class="img-item"><img src="./images/popular-products-in-beauty5.jpg" alt="Clothing Item"></div>
+
+                <div class="img-item"><img src="./images/popular-products-in-beauty6.jpg" alt="Clothing Item"></div>
+
+                <div class="img-item"><img src="./images/popular-products-in-beauty7.jpg" alt="Clothing Item"></div>
+
+                <div class="img-item"><img src="./images/popular-products-in-beauty8.jpg" alt="Clothing Item"></div>
+
+                <div class="img-item"><img src="./images/popular-products-in-beauty9.jpg" alt="Clothing Item"></div>
+
+                <div class="img-item"><img src="./images/popular-products-in-beauty10.jpg" alt="Clothing Item"></div>
+
+                <div class="img-item"><img src="./images/popular-products-in-beauty11.jpg" alt="Clothing Item"></div>
+
+                <div class="img-item"><img src="./images/popular-products-in-beauty12.jpg" alt="Clothing Item"></div>
+
+                <div class="img-item"><img src="./images/popular-products-in-beauty13.jpg" alt="Clothing Item"></div>
+                
+                <div class="img-item"><img src="./images/popular-products-in-beauty14.jpg" alt="Clothing Item"></div>
+                
+                <div class="img-item"><img src="./images/popular-products-in-beauty15.jpg" alt="Clothing Item"></div>
+
+                <div class="img-item"><img src="./images/popular-products-in-beauty16.jpg" alt="Clothing Item"></div>
+
+                <div class="img-item"><img src="./images/popular-products-in-beauty17.jpg" alt="Clothing Item"></div>
+
+                <div class="img-item"><img src="./images/popular-products-in-beauty18.jpg" alt="Clothing Item"></div>
+
+                <div class="img-item"><img src="./images/popular-products-in-beauty19.jpg" alt="Clothing Item"></div>
+                
+                <div class="img-item"><img src="./images/popular-products-in-beauty20.jpg" alt="Clothing Item"></div>
+            </div>
+        </div>
+    </section>
+
+
+<div class="amazon-contain">
+  <div class="box-1">
+    <h2>Gaming merchandise</h2>
+    <div class="box-2">
+      <div class="grid-item">
+        <div class="img-wrapper"><img src="./moreimage/gaming1.jpg" alt="Apparel"></div>
+        <span>Apparel</span>
+      </div>
+      <div class="grid-item">
+        <div class="img-wrapper"><img src="./moreimage/gaming2.jpg" alt="Hats"></div>
+        <span>Hats</span>
+      </div>
+      <div class="grid-item">
+        <div class="img-wrapper"><img src="./moreimage/gaming3.jpg" alt="Action figures"></div>
+        <span>Action figures</span>
+      </div>
+      <div class="grid-item">
+        <div class="img-wrapper"><img src="./moreimage/gaming4.jpg" alt="Mugs"></div>
+        <span>Mugs</span>
+      </div>
+    </div>
+    <a href="#" class="see-more">See more</a>
+  </div>
+
+  <div class="box-1">
+    <h2>Most-loved travel essentials</h2>
+    <div class="box-2">
+      <div class="grid-item">
+        <div class="img-wrapper bg-green"><img src="./moreimage/most-loved1.jpg" alt="Backpacks"></div>
+        <span>Backpacks</span>
+      </div>
+      <div class="grid-item">
+        <div class="img-wrapper bg-green"><img src="./moreimage/most-loved2.jpg" alt="Suitcases"></div>
+        <span>Suitcases</span>
+      </div>
+      <div class="grid-item">
+        <div class="img-wrapper bg-green"><img src="./moreimage/most-loved3.jpg" alt="Accessories"></div>
+        <span>Accessories</span>
+      </div>
+      <div class="grid-item">
+        <div class="img-wrapper bg-green"><img src="./moreimage/most-loved4.jpg" alt="Handbags"></div>
+        <span>Handbags</span>
+      </div>
+    </div>
+    <a href="#" class="see-more">Discover more</a>
+  </div>
+
+  <div class="box-1">
+    <h2>Have more fun with family</h2>
+    <div class="box-2">
+      <div class="grid-item">
+        <div class="img-wrapper bg-orange"><img src="./moreimage/have-more-fun1.jpg" alt="Outdoor Play Sets"></div>
+        <span>Outdoor Play Sets</span>
+      </div>
+      <div class="grid-item">
+        <div class="img-wrapper bg-orange"><img src="./moreimage/have-more-fun2.jpg" alt="Learning Toys"></div>
+        <span>Learning Toys</span>
+      </div>
+      <div class="grid-item">
+        <div class="img-wrapper bg-orange"><img src="./moreimage/have-more-fun3.jpg" alt="Action Figures"></div>
+        <span>Action Figures</span>
+      </div>
+      <div class="grid-item">
+        <div class="img-wrapper bg-orange"><img src="./moreimage/have-more-fun4.jpg" alt="Pretend Play Toys"></div>
+        <span>Pretend Play Toys</span>
+      </div>
+    </div>
+    <a href="#" class="see-more">See more</a>
+  </div>
+
+  <div class="box-1">
+    <h2>Upgrade on Tech</h2>
+    <div class="box-2">
+      <div class="grid-item">
+        <div class="img-wrapper"><img src="./moreimage/pc1.webp" alt="PC"></div>
+        <span>PC</span>
+      </div>
+      <div class="grid-item">
+        <div class="img-wrapper"><img src="./moreimage/pc2.jfif" alt="Wireless"></div>
+        <span>Wireless</span>
+      </div>
+      <div class="grid-item">
+        <div class="img-wrapper"><img src="./moreimage/pc3.avif" alt="Software"></div>
+        <span>Software</span>
+      </div>
+      <div class="grid-item">
+        <div class="img-wrapper"><img src="./moreimage/pc4.webp" alt="Home entertainment"></div>
+        <span>Home entertainment</span>
+      </div>
+    </div>
+    <a href="#" class="see-more">Shop all tech deals</a>
+  </div>
+</div>
+
+
+ <section class="amazon-best-sellers">
+        <h2 class="slider-heading">Best Sellers in Sports & Outdoors</h2>
+        
+        <div class="slider-container">
+            <button class="silder-btn prev" id="silderbtnPrev3">&#10094;</button>
+            <button class="silder-btn next" id="silderbtnNext3">&#10094;</button>
+
+            <div class="image-track" id="imageTrack2">
+                <div class="img-item"><img src="./moreimage/best-sellers-in-sports1.jpg" alt="Clothing Item"></div>
+                
+                <div class="img-item"><img src="./moreimage/best-sellers-in-sports2.jpg" alt="Clothing Item"></div>
+
+                <div class="img-item"><img src="./moreimage/best-sellers-in-sports3.jpg" alt="Clothing Item"></div>
+
+                <div class="img-item"><img src="./moreimage/best-sellers-in-sports4.jpg" alt="Clothing Item"></div>
+
+                <div class="img-item"><img src="./moreimage/best-sellers-in-sports5.jpg" alt="Clothing Item"></div>
+
+                <div class="img-item"><img src="./moreimage/best-sellers-in-sports6.jpg" alt="Clothing Item"></div>
+
+                <div class="img-item"><img src="./moreimage/best-sellers-in-sports7.jpg" alt="Clothing Item"></div>
+
+                <div class="img-item"><img src="./moreimage/best-sellers-in-sports8.jpg" alt="Clothing Item"></div>
+
+                <div class="img-item"><img src="./moreimage/best-sellers-in-sports9.jpg" alt="Clothing Item"></div>
+
+                <div class="img-item"><img src="./moreimage/best-sellers-in-sports10.jpg" alt="Clothing Item"></div>
+
+                <div class="img-item"><img src="./moreimage/best-sellers-in-sports11.jpg" alt="Clothing Item"></div>
+
+                <div class="img-item"><img src="./moreimage/best-sellers-in-sports12.jpg" alt="Clothing Item"></div>
+
+                <div class="img-item"><img src="./moreimage/best-sellers-in-sports13.jpg" alt="Clothing Item"></div>
+                
+                <div class="img-item"><img src="./moreimage/best-sellers-in-sports14.jpg" alt="Clothing Item"></div>
+                
+                <div class="img-item"><img src="./moreimage/best-sellers-in-sports15.jpg" alt="Clothing Item"></div>
+
+                <div class="img-item"><img src="./moreimage/best-sellers-in-sports16.jpg" alt="Clothing Item"></div>
+
+                <div class="img-item"><img src="./moreimage/best-sellers-in-sports17.jpg" alt="Clothing Item"></div>
+
+                <div class="img-item"><img src="./moreimage/best-sellers-in-sports18.jpg" alt="Clothing Item"></div>
+
+                <div class="img-item"><img src="./moreimage/best-sellers-in-sports19.jpg" alt="Clothing Item"></div>
+                
+            </div>
+        </div>
+    </section>
+
+
+    <section class="amazon-best-sellers">
+        <h2 class="slider-heading">Top picks for Pakistan</h2>
+        
+        <div class="slider-container">
+            <button class="silder-btn prev" id="silderbtnPrev4">&#10094;</button>
+            <button class="silder-btn next" id="silderbtnNext4">&#10094;</button>
+
+            <div class="image-track" id="imageTrack3">
+                <div class="img-item"><img src="./moreimage/imagefolder/top-pakistan1.jpg" alt="Clothing Item"></div>
+                
+                <div class="img-item"><img src="./moreimage/imagefolder/top-pakistan2.jpg" alt="Clothing Item"></div>
+
+                <div class="img-item"><img src="./moreimage/imagefolder/top-pakistan3.jpg" alt="Clothing Item"></div>
+
+                <div class="img-item"><img src="./moreimage/imagefolder/top-pakistan4.jpg" alt="Clothing Item"></div>
+
+                <div class="img-item"><img src="./moreimage/imagefolder/top-pakistan5.jpg" alt="Clothing Item"></div>
+
+                <div class="img-item"><img src="./moreimage/imagefolder/top-pakistan6.jpg" alt="Clothing Item"></div>
+
+                <div class="img-item"><img src="./moreimage/imagefolder/top-pakistan7.jpg" alt="Clothing Item"></div>
+
+                <div class="img-item"><img src="./moreimage/imagefolder/top-pakistan8.jpg" alt="Clothing Item"></div>
+
+                <div class="img-item"><img src="./moreimage/imagefolder/top-pakistan9.jpg" alt="Clothing Item"></div>
+
+                <div class="img-item"><img src="./moreimage/imagefolder/top-pakistan10.jpg" alt="Clothing Item"></div>
+
+                <div class="img-item"><img src="./moreimage/imagefolder/top-pakistan11.jpg" alt="Clothing Item"></div>
+
+                <div class="img-item"><img src="./moreimage/imagefolder/top-pakistan12.jpg" alt="Clothing Item"></div>
+
+                <div class="img-item"><img src="./moreimage/imagefolder/top-pakistan13.jpg" alt="Clothing Item"></div>
+                
+                <div class="img-item"><img src="./moreimage/imagefolder/top-pakistan14.jpg" alt="Clothing Item"></div>
+                
+                <div class="img-item"><img src="./moreimage/imagefolder/top-pakistan15.jpg" alt="Clothing Item"></div>
+
+                <div class="img-item"><img src="./moreimage/imagefolder/top-pakistan16.jpg" alt="Clothing Item"></div>
+
+                <div class="img-item"><img src="./moreimage/imagefolder/top-pakistan17.jpg" alt="Clothing Item"></div>
+
+                <div class="img-item"><img src="./moreimage/imagefolder/top-pakistan18.jpg" alt="Clothing Item"></div>
+
+                <div class="img-item"><img src="./moreimage/imagefolder/top-pakistan19.jpg" alt="Clothing Item"></div>
+                
+                <div class="img-item"><img src="./moreimage/imagefolder/top-pakistan20.jpg" alt="Clothing Item"></div>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="amazon-contain">
+  <div class="box-1">
+    <h2>Level up your beauty routine</h2>
+    <div class="box-2">
+      <div class="grid-item">
+        <div class="img-wrapper"><img src="./moreimage/beauty-routine1.jpg" alt="Apparel"></div>
+        <span>MakeUp</span>
+      </div>
+      <div class="grid-item">
+        <div class="img-wrapper"><img src="./moreimage/beauty-routine2.jpg" alt="Hats"></div>
+        <span>Brushes</span>
+      </div>
+      <div class="grid-item">
+        <div class="img-wrapper"><img src="./moreimage/beauty-routine3.jpg" alt="Action figures"></div>
+        <span>Sponges</span>
+      </div>
+      <div class="grid-item">
+        <div class="img-wrapper"><img src="./moreimage/beauty-routine4.jpg" alt="Mugs"></div>
+        <span>Mirrors</span>
+      </div>
+    </div>
+    <a href="#" class="see-more">See more</a>
+  </div>
+
+  <div class="box-1">
+    <h2>Most-loved watches</h2>
+    <div class="box-2">
+      <div class="grid-item">
+        <div class="img-wrapper bg-green"><img src="./images/watches1.jpg" alt="Backpacks"></div>
+        <span>Women</span>
+      </div>
+      <div class="grid-item">
+        <div class="img-wrapper bg-green"><img src="./images/watches2.jpg" alt="Suitcases"></div>
+        <span>Men</span>
+      </div>
+      <div class="grid-item">
+        <div class="img-wrapper bg-green"><img src="./images/watches3.jpg" alt="Accessories"></div>
+        <span>Kids</span>
+      </div>
+      <div class="grid-item">
+        <div class="img-wrapper bg-green"><img src="./images/watches4.jpg" alt="Handbags"></div>
+        <span>Boys</span>
+      </div>
+    </div>
+    <a href="#" class="see-more">Discover more</a>
+  </div>
+
+  <div class="box-1">
+    <h2>Level up your PC here</h2>
+    <div class="box-2">
+      <div class="grid-item">
+        <div class="img-wrapper bg-orange"><img src="./moreimage/imagefolder/level-up-pc1.jpg" alt="Outdoor Play Sets"></div>
+        <span>Headphones</span>
+      </div>
+      <div class="grid-item">
+        <div class="img-wrapper bg-orange"><img src="./moreimage/imagefolder/level-up-pc2.jpg"></div>
+        <span>Tablets</span>
+      </div>
+      <div class="grid-item">
+        <div class="img-wrapper bg-orange"><img src="./moreimage/imagefolder/level-up-pc3.jpg" alt="Action Figures"></div>
+        <span>Gaming</span>
+      </div>
+      <div class="grid-item">
+        <div class="img-wrapper bg-orange"><img src="./moreimage/imagefolder/level-up-pc4.jpg" alt="Pretend Play Toys"></div>
+        <span>Speakers</span>
+      </div>
+    </div>
+    <a href="#" class="see-more">See more</a>
+  </div>
+
+  <div class="box-1">
+    <h2>Deals on top categories</h2>
+    <div class="box-2">
+      <div class="grid-item">
+        <div class="img-wrapper"><img src="./moreimage/imagefolder/all-categories1.jpg" alt="PC"></div>
+        <span>Books</span>
+      </div>
+      <div class="grid-item">
+        <div class="img-wrapper"><img src="./moreimage/imagefolder/all-categories2.jpg" alt="Wireless"></div>
+        <span>Fashion</span>
+      </div>
+      <div class="grid-item">
+        <div class="img-wrapper"><img src="./moreimage/imagefolder/all-categories3.jpg" alt="Software"></div>
+        <span>PC</span>
+      </div>
+      <div class="grid-item">
+        <div class="img-wrapper"><img src="./moreimage/imagefolder/all-categories4.jpg" alt="Home entertainment"></div>
+        <span>Beauty</span>
+      </div>
+    </div>
+    <a href="#" class="see-more">Discover more</a>
+  </div>
+</div>
+
+
+<section class="amazon-best-sellers">
+        <h2 class="slider-heading">Best Sellers in Home & Kitchen</h2>
+        
+        <div class="slider-container">
+            <button class="silder-btn prev" id="silderbtnPrev5">&#10094;</button>
+            <button class="silder-btn next" id="silderbtnNext5">&#10094;</button>
+
+            <div class="image-track" id="imageTrack4">
+                <div class="img-item"><img src="./moreimage/home-&-kitchen1.avif" alt="Clothing Item"></div>
+                
+                <div class="img-item"><img src="./moreimage/home-&-kitchen2.jpg" alt="Clothing Item"></div>
+
+                <div class="img-item"><img src="./moreimage/home-&-kitchen3.jpg" alt="Clothing Item"></div>
+
+                <div class="img-item"><img src="./moreimage/home-&-kitchen4.webp" alt="Clothing Item"></div>
+
+                <div class="img-item"><img src="./moreimage/home-&-kitchen5.jpg" alt="Clothing Item"></div>
+
+                <div class="img-item"><img src="./moreimage/home-&-kitchen6.jpg" alt="Clothing Item"></div>
+                
+                <div class="img-item"><img src="./moreimage/home-&-kitchen7.jpg" alt="Clothing Item"></div>
+
+                <div class="img-item"><img src="./moreimage/home-&-kitchen8.jpg" alt="Clothing Item"></div>
+
+                <div class="img-item"><img src="./moreimage/home-&-kitchen9.webp" alt="Clothing Item"></div>
+
+                <div class="img-item"><img src="./moreimage/home-&-kitchen10.jpg" alt="Clothing Item"></div>
+
+                <div class="img-item"><img src="./moreimage/home-&-kitchen11.avif" alt="Clothing Item"></div>
+
+                <div class="img-item"><img src="./moreimage/home-&-kitchen12.jpg" alt="Clothing Item"></div>
+
+                <div class="img-item"><img src="./moreimage/home-&-kitchen13.webp" alt="Clothing Item"></div>
+                
+                <div class="img-item"><img src="./moreimage/home-&-kitchen14.webp" alt="Clothing Item"></div>
+                
+                <div class="img-item"><img src="./moreimage/home-&-kitchen15.webp" alt="Clothing Item"></div>
+
+                <div class="img-item"><img src="./moreimage/home-&-kitchen16.jpg" alt="Clothing Item"></div>
+
+                <div class="img-item"><img src="./moreimage/home-&-kitchen17.avif" alt="Clothing Item"></div>
+
+                <div class="img-item"><img src="./moreimage/home-&-kitchen18.avif" alt="Clothing Item"></div>
+
+                <div class="img-item"><img src="./moreimage/home-&-kitchen19.avif" alt="Clothing Item"></div>
+                
+                <div class="img-item"><img src="./moreimage/home-&-kitchen20.jpg" alt="Clothing Item"></div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="amazon-best-sellers">
+        <h2 class="slider-heading">Popular products in Wireless internationally</h2>
+        
+        <div class="slider-container">
+            <button class="silder-btn prev" id="silderbtnPrev6">&#10094;</button>
+            <button class="silder-btn next" id="silderbtnNext6">&#10094;</button>
+
+            <div class="image-track" id="imageTrack5">
+                <div class="img-item"><img src="./moreimage/imagefolder/wireless-products1.jpg" alt="Clothing Item"></div>
+                
+                <div class="img-item"><img src="./moreimage/imagefolder/wireless-products2.jfif" alt="Clothing Item"></div>
+
+                <div class="img-item"><img src="./moreimage/imagefolder/wireless-products3.jpg" alt="Clothing Item"></div>
+
+                <div class="img-item"><img src="./moreimage/imagefolder/wireless-products4.avif" alt="Clothing Item"></div>
+
+                <div class="img-item"><img src="./moreimage/imagefolder/wireless-products5.jfif" alt="Clothing Item"></div>
+
+                <div class="img-item"><img src="./moreimage/imagefolder/wireless-products6.jpg" alt="Clothing Item"></div>
+
+                <div class="img-item"><img src="./moreimage/imagefolder/wireless-products7.jpg" alt="Clothing Item"></div>
+
+                <div class="img-item"><img src="./moreimage/imagefolder/wireless-products8.webp" alt="Clothing Item"></div>
+
+                <div class="img-item"><img src="./moreimage/imagefolder/wireless-products9.webp" alt="Clothing Item"></div>
+
+                <div class="img-item"><img src="./moreimage/imagefolder/wireless-products10.jpg" alt="Clothing Item"></div>
+
+                <div class="img-item"><img src="./moreimage/imagefolder/wireless-products11.webp" alt="Clothing Item"></div>
+
+                <div class="img-item"><img src="./moreimage/imagefolder/wireless-products12.avif" alt="Clothing Item"></div>
+
+                <div class="img-item"><img src="./moreimage/imagefolder/wireless-products13.jpg" alt="Clothing Item"></div>
+                
+                <div class="img-item"><img src="./moreimage/imagefolder/wireless-products14.jpg" alt="Clothing Item"></div>
+                
+                <div class="img-item"><img src="./moreimage/imagefolder/wireless-products15.jpg" alt="Clothing Item"></div>
+
+                <div class="img-item"><img src="./moreimage/imagefolder/wireless-products16.jpg" alt="Clothing Item"></div>
+
+                <div class="img-item"><img src="./moreimage/imagefolder/wireless-products17.jpg" alt="Clothing Item"></div>
+
+                <div class="img-item"><img src="./moreimage/imagefolder/wireless-products18.avif" alt="Clothing Item"></div>
+
+                <div class="img-item"><img src="./moreimage/imagefolder/wireless-products19.jpg" alt="Clothing Item"></div>
+                
+                <div class="img-item"><img src="./moreimage/imagefolder/wireless-products20.jpg" alt="Clothing Item"></div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <div class="amazon-contain">
+  <div class="box-1">
+    <h2>Finds for Home</h2>
+    <div class="box-2">
+      <div class="grid-item">
+        <div class="img-wrapper"><img src="./images/best-finds-home1.webp" alt="Apparel"></div>
+        <span>lamps</span>
+      </div>
+      <div class="grid-item">
+        <div class="img-wrapper"><img src="./images/best-finds-home2.webp" alt="Hats"></div>
+        <span>Furniture</span>
+      </div>
+      <div class="grid-item">
+        <div class="img-wrapper"><img src="./images/best-finds-home3.webp" alt="Action figures"></div>
+        <span>Chairs</span>
+      </div>
+      <div class="grid-item">
+        <div class="img-wrapper"><img src="./images/best-finds-home4.jpg" alt="Mugs"></div>
+        <span>Table</span>
+      </div>
+    </div>
+    <a href="#" class="see-more">See more</a>
+  </div>
+
+  <div class="box-1">
+    <h2>Toys for all ages</h2>
+    <div class="box-2">
+      <div class="grid-item">
+        <div class="img-wrapper bg-green"><img src="./images/toys1.jpg" alt="Backpacks"></div>
+        <span>Infants & Toddlers</span>
+      </div>
+      <div class="grid-item">
+        <div class="img-wrapper bg-green"><img src="./images/toys2.webp" alt="Suitcases"></div>
+        <span>Kids</span>
+      </div>
+      <div class="grid-item">
+        <div class="img-wrapper bg-green"><img src="./images/toys3.png" alt="Accessories"></div>
+        <span>Tweens & Teens</span>
+      </div>
+      <div class="grid-item">
+        <div class="img-wrapper bg-green"><img src="./images/toys4.jfif" alt="Handbags"></div>
+        <span>Kidults</span>
+      </div>
+    </div>
+    <a href="#" class="see-more">Discover more</a>
+  </div>
+
+  <div class="box-1">
+    <h2>Best Gaming Products</h2>
+    <div class="box-2">
+      <div class="grid-item">
+        <div class="img-wrapper bg-orange"><img src="./images/best-pc1.webp"></div>
+        <span>PC</span>
+      </div>
+      <div class="grid-item">
+        <div class="img-wrapper bg-orange"><img src="./images/best-pc2.webp"></div>
+        <span>Laptop</span>
+      </div>
+      <div class="grid-item">
+        <div class="img-wrapper bg-orange"><img src="./images/best-pc3.jpg"></div>
+        <span>Mobile</span>
+      </div>
+      <div class="grid-item">
+        <div class="img-wrapper bg-orange"><img src="./images/best-pc4.webp"></div>
+        <span>Tablet</span>
+      </div>
+    </div>
+    <a href="#" class="see-more">See more</a>
+  </div>
+
+  <div class="box-1">
+    <h2>Gear up to get fit</h2>
+    <div class="box-2">
+      <div class="grid-item">
+        <div class="img-wrapper"><img src="./moreimage/imagefolder/gear-up1.webp" alt="Clothing"></div>
+        <span>Clothing</span>
+      </div>
+      <div class="grid-item">
+        <div class="img-wrapper"><img src="./moreimage/imagefolder/gear-up2.jpg" alt="trackers"></div>
+        <span>Trackers</span>
+      </div>
+      <div class="grid-item">
+        <div class="img-wrapper"><img src="./moreimage/imagefolder/gear-up3.jfif" alt=""></div>
+        <span>Equipment</span>
+      </div>
+      <div class="grid-item">
+        <div class="img-wrapper"><img src="./moreimage/imagefolder/gear-up4.jfif" alt="Home entertainment"></div>
+        <span>Deals</span>
+      </div>
+    </div>
+    <a href="#" class="see-more">Discover more</a>
+  </div>
+</div>
+
+
+<div class="footer-signin">
+    <hr class="footer-hr">
+
+    <h2>See personalized recommendations</h2>
+    <button>Sign In</button>
+    <p>New customer? <u style="color: rgb(51, 51, 245);">Start here</u></p>
+    <br>
+    <hr>
+</div>
+
+
+<footer class="footer">
+        <div class="footer-panel1">
+            <a href="#" class="Top">Back to top</a>
+        </div>
+
+        <div class="footer-panel2">
+                <ul>
+                <p>Get to Know Us</p>
+                <a>Careers</a>
+                <a>Blog</a>
+                <a>About Amazon</a>
+                <a>Investor Relations</a>
+                <a>Amazon Devices</a>
+                <a>Amazon Science</a>
+            </ul>
+                
+               <ul>
+                <p>Make Money with Us</p>
+                <a>Sell products on Amazon</a>
+                <a>Sell on Amazon Business</a>
+                <a>Sell apps on Amazon</a>
+                <a>Become an Affiliate</a>
+                <a>Advertise Your Products</a>
+                <a>Self-Publish with Us</a>
+                <a>Host an Amazon Hub</a>
+                </ul>
+
+                <ul>
+                <p>Amazon Payment Products</p>
+                <a>Amazon Rewards Visa Signature Cards</a>
+                <a>Amazon.com Store Card</a>
+                <a>Amazon Business Card</a>
+                <a>Amazon Business Line of Credit</a>
+                <a>Shop with Points</a>
+                <a>Credit Card Marketplace</a>
+                </ul>
+
+                 <ul>
+                <p>Let Us Help You</p>
+                <a>Your Account</a>
+                <a>Your Orders</a>
+                <a>Shipping Rates & Policies</a>
+                <a>Returns & Replacements</a>
+                <a>Manage Your Content and Devices</a>
+                <a>Amazon Assistant Download</a>
+                <a>Help</a>
+                </ul>
+
+                
+    </div>
+</footer>
+
+
+
+<footer class="lower-footer">
+
+    <div class="lower-footer-top">
+
+        <div class="lower-footer-logo"></div>
+
+        <div class="lower-footer-options">
+
+            <button class="lower-footer-btn">
+                <i class="fa-solid fa-globe"></i>
+                English
+                <i class="fa-solid fa-caret-down"></i>
+            </button>
+
+            <button class="lower-footer-btn">
+                <i class="fa-solid fa-dollar-sign"></i>
+                USD - U.S. Dollar
+            </button>
+
+            <button class="lower-footer-btn">
+              <img src="./images/usa-flag.jfif" class="flag-icon imger">
+                United States
+            </button>
+
+        </div>
+
+    </div>
+
+    <div class="lower-footer-links">
+
+        <div class="lower-footer-column">
+            <a href="#"><strong>Amazon Music</strong><span>Stream millions of songs</span></a>
+            <a href="#"><strong>Amazon Business</strong><span>Everything For Your Business</span></a>
+            <a href="#"><strong>IMDbPro</strong><span>Get Info Entertainment Professionals Need</span></a>
+        </div>
+
+        <div class="lower-footer-column">
+            <a href="#"><strong>Amazon Ads</strong><span>Reach customers wherever they spend their time</span></a>
+            <a href="#"><strong>AmazonGlobal</strong><span>Ship Orders Internationally</span></a>
+            <a href="#"><strong>Kindle Direct Publishing</strong><span>Indie Digital & Print Publishing Made Easy</span></a>
+            <a href="#"><strong>eero WiFi</strong><span>Stream 4K Video in Every Room</span></a>
+        </div>
+
+        <div class="lower-footer-column">
+            <a href="#"><strong>6pm</strong><span>Score deals on fashion brands</span></a>
+            <a href="#"><strong>Amazon Web Services</strong><span>Scalable Cloud Computing Services</span></a>
+            <a href="#"><strong>Prime Video Direct</strong><span>Video Distribution Made Easy</span></a>
+            <a href="#"><strong>Blink</strong><span>Smart Security for Every Home</span></a>
+        </div>
+
+        <div class="lower-footer-column">
+            <a href="#"><strong>AbeBooks</strong><span>Books, art & collectibles</span></a>
+            <a href="#"><strong>Audible</strong><span>Listen to Books & Original Audio Performances</span></a>
+            <a href="#"><strong>Shopbop</strong><span>Designer Fashion Brands</span></a>
+            <a href="#"><strong>Neighbors App</strong><span>Real-Time Crime & Safety Alerts</span></a>
+        </div>
+
+        <div class="lower-footer-column">
+            <a href="#"><strong>ACX</strong><span>Audiobook Publishing Made Easy</span></a>
+            <a href="#"><strong>Box Office Mojo</strong><span>Find Movie Box Office Data</span></a>
+            <a href="#"><strong>Woot!</strong><span>Deals and Shenanigans</span></a>
+            <a href="#"><strong>PillPack</strong><span>Pharmacy Simplified</span></a>
+        </div>
+
+        <div class="lower-footer-column">
+            <a href="#"><strong>Sell on Amazon</strong><span>Start a Selling Account</span></a>
+            <a href="#"><strong>Goodreads</strong><span>Book reviews & recommendations</span></a>
+            <a href="#"><strong>Zappos</strong><span>Shoes & Clothing</span></a>
+        </div>
+
+        <div class="lower-footer-column">
+            <a href="#"><strong>Veeqo</strong><span>Shipping Software Inventory Management</span></a>
+            <a href="#"><strong>IMDb</strong><span>Movies, TV & Celebrities</span></a>
+            <a href="#"><strong>Ring</strong><span>Smart Home Security Systems</span></a>
+        </div>
+
+    </div>
+
+    <div class="lower-footer-bottom">
+
+        <div class="lower-footer-bottom-links">
+            <a href="#">Conditions of Use</a>
+            <a href="#">Privacy Notice</a>
+            <a href="#">Consumer Health Data Privacy Disclosure</a>
+            <a href="#">Your Ads Privacy Choices</a>
+        </div>
+
+        <p>© 1996-2026, Amazon.com, Inc. or its affiliates</p>
+
+    </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,159 @@
+@media screen and (max-width: 1200px) {
+
+    .nav-search{
+        width: 500px;
+    }
+
+    .search-input{
+        width: 100%;
+    }
+
+    .panel-ops{
+        width: 60%;
+    }
+
+}
+
+@media screen and (max-width: 992px) {
+
+    .navbar{
+        flex-wrap: wrap;
+        height: auto;
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .nav-search{
+        order: 3;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .search-input{
+        width: 100%;
+    }
+
+    .signin,
+    .languages{
+        padding: 5px 10px;
+    }
+
+    .dropdown-menu{
+        width: 350px;
+        right: -50px;
+    }
+
+    .panel{
+        flex-wrap: wrap;
+        height: auto;
+        padding: 10px 0;
+    }
+
+    .panel-ops{
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .panel-ops p{
+        display: inline-block;
+        margin: 5px 10px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .navbar{
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .nav-logo{
+        width: 80px;
+        height: 40px;
+    }
+
+    .logo{
+        height: 40px;
+    }
+
+    .nav-search{
+        height: 38px;
+    }
+
+    .search-select{
+        width: 45px;
+        font-size: 12px;
+    }
+
+    .search-input{
+        font-size: 14px;
+    }
+
+    .serach-icon{
+        width: 50px;
+        font-size: 1rem;
+    }
+
+    .add-first{
+        font-size: 0.7rem;
+        margin-left: 20px;
+    }
+
+    .add-sec{
+        font-size: 0.85rem;
+    }
+
+    .nav-sec{
+        font-size: 0.75rem;
+    }
+
+    .nav-cart{
+        font-size: 0.75rem;
+    }
+
+    .nav-cart i{
+        font-size: 20px;
+    }
+
+    .dropdown-menu{
+        width: 300px;
+        right: -80px;
+        padding: 15px;
+    }
+
+    .dropdown-content{
+        flex-direction: column;
+    }
+
+    .border-left{
+        border-left: none;
+        border-top: 1px solid #eee;
+        margin-top: 15px;
+        padding-top: 15px;
+    }
+
+    .lang-panel{
+        width: 240px;
+        right: -70px;
+    }
+
+    .panel{
+        justify-content: center;
+        text-align: center;
+    }
+
+    .panel-ops{
+        font-size: 0.75rem;
+    }
+
+    .panel-deals{
+        margin-top: 8px;
+        font-size: 0.8rem;
+    }
+
+}
+
+
+
